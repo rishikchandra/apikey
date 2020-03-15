@@ -2,7 +2,7 @@
       <div *ngFor="let item of nowplaying">
         <div class="first">
           <h4>{{item.title}}</h4>
-          <img src="http://image.tmdb.org/t/p/w185/{{item.poster_path}}" class="image" alt="error in image" (click)='OnClick(item.id)'/><br>
+          <img src="http://image.tmdb.org/t/p/w185/{{item.poster_path}}" alt="error in image" (click)='OnClick(item.id)'/><br>
           <span>popularity <p>{{item.popularity}}</p> </span>
         </div>
   </div>
