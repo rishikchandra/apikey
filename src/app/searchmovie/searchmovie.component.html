@@ -1,0 +1,9 @@
+
+<div class="body"> 
+      <div *ngFor="let item of moviedetails">
+        <div class="first">
+          <h2>{{item.title}}</h2>
+          <img src="http://image.tmdb.org/t/p/w185/{{item.poster_path}}" alt="error in img" (click)='OnClick(item.id)'/>
+        </div>
+  </div>
+</div>

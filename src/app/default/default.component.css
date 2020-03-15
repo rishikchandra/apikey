@@ -1,0 +1,22 @@
+
+.body{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(62, 151, 163);
+    min-width: max-content;
+    height: 100%;
+}
+
+.first{
+    border-style: ridge;
+    background-color:rgb(141, 113, 113);
+    flex-direction: row;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+
+

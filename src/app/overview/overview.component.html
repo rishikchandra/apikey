@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="first">
+        <a  routerlink='/overview' routerLinkActive="active"></a>
+        <h1>{{overview?.title}}</h1>
+        <h4>{{overview?.tagline}}</h4>
+        <img src="http://image.tmdb.org/t/p/w185/{{overview?.poster_path}}"><br>
+        <span><h2>Overview</h2><p>{{overview?.overview}}</p></span>
+        <span><h2>Genres</h2>
+        <p *ngFor="let genre of overview?.genres">{{genre?.name}}</p></span>
+        <span><h2>Release Date</h2><p>{{overview?.release_date}}</p> </span>
+        <span><h2>Runtime</h2><p>{{overview?.runtime}} min</p> </span>
+        <span><h2>Rating</h2><p>{{overview?.vote_average}}</p></span>
+        <span><h2>Produced By</h2>
+        <p *ngFor="let item of overview?.production_companies">{{item?.name}}</p></span>
+        <div>
+            <button (click)="gotoHome()">Back</button>
+          </div>
+    </div>
+  </div>
